@@ -1,20 +1,12 @@
-var max = 100;
-var num = 1;
-var count = 0;
+var alertString;
+alertString = addString("WebCamp");
 
-while(num < max){
-  num = num * 2;
-  count = count +1;
+// 作成した関数を呼び出す
+alert(alertString);
+
+// 作成した関数
+function addString(strA){
+  var addStr = "Hello " + strA;
+  return addStr;
 }
 
-alert('2を掛け続けて' + max +'を超えるのに必要だった回数は' + count + '回です');
-
-
-var i;
-var num =0;
-
-for(i = 1; i < 11; i++){
-  num = num + i;
-}
-
-alert('1から10まで足した結果は' + num + 'です');
